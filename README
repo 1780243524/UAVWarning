@@ -1,0 +1,17 @@
+本项目采用了一种基于流量分析的无人机检测方法，该方法可以实现探测无人机位置的同时，还可以检测无人机是否正在传输特定的内容，以此区分无人机的拍摄目的。
+
+使用方法：
+help  		show the help
+exit		exit the program
+scan  		scan for all the AP MAC and filter the danger MAC
+detect  	detect for the danger MAC
+		judge whether or not it's fpv channel
+blink		blink the LED to get the POV result
+stay		not blink the LED and get the POV result
+initialize	initialize the MAC for MAC.safe
+auto		do all the things, include:
+			initialize(1 time)
+			while(1):
+				scan
+				detect
+				blink
